@@ -4,7 +4,7 @@ const m = document.getElementById("m");
 const s = document.getElementById("s");
 const label = document.getElementById("label");
 const audio = document.getElementById("audio");
-const newYear = `Feb 9, ${new Date().getFullYear()} 20:30:00`;
+const newYear = `Feb 9, ${new Date().getFullYear()} 20:44:00`;
 
 var getTrueNumber = (num) => {
   return num < 10 ? "0" + num : num;
@@ -61,7 +61,8 @@ function initCountdown() {
 }
 
 function showletter() {
-  document.title = "Letter";
+  if (audio.paused) audio.play();
+  document.title = "Love You ♥";
   document.getElementById("letter").style.opacity = "1";
   document.getElementById("normal").style.opacity = "0";
   document.getElementById("tap").style.opacity = "0";
