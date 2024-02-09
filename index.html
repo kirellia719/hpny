@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Countdown</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="center">
+    <audio id="audio" loop>
+      <source src="./HappyNewYear.mp3" type="audio/mpeg" />
+    </audio>
+    <img class="tet tet-left" src="mai-trai.png" style="width: 160px" />
+    <img class="tet tet-right" src="mai-phai.png" style="width: 160px" />
+
+    <div id="normal" class="middle">
+      <h1 id="label">COUNTDOWN</h1>
+      <div class="time">
+        <span>
+          <div id="d">00</div>
+          Days
+        </span>
+        <span>
+          <div id="h">00</div>
+          Hours
+        </span>
+        <span>
+          <div id="m">00</div>
+          Minutes
+        </span>
+        <span>
+          <div id="s">00</div>
+          Seconds
+        </span>
+      </div>
+    </div>
+
+    <div id="tap">Tap somewhere!</div>
+
+    <div id="letter" class="letter center">
+      <div id="image">
+        <img src="./2024.png" />
+      </div>
+      <div id="content">
+        <div id="text">
+          Gửi tới của mình,
+          <div class="paragraph">.</div>
+          <div class="paragraph">.</div>
+
+          <div class="paragraph">See you soon.</div>
+          <div style="font-weight: 600">Happy New Year!</div>
+        </div>
+      </div>
+      <div class="flowers" aria-hidden="true">
+        <div class="flower"><img src="mai.png" /></div>
+        <div class="flower"><img src="mai2.png" /></div>
+        <div class="flower"><img src="mai.png" /></div>
+        <div class="flower"><img src="mai.png" /></div>
+        <div class="flower"><img src="mai.png" /></div>
+        <div class="flower"><img src="mai2.png" /></div>
+        <div class="flower"><img src="mai.png" /></div>
+        <div class="flower"><img src="mai2.png" /></div>
+        <div class="flower"><img src="mai.png" /></div>
+        <div class="flower"><img src="mai.png" /></div>
+        <div class="flower"><img src="mai.png" /></div>
+        <div class="flower"><img src="mai2.png" /></div>
+      </div>
+    </div>
+    <canvas id="canvas" style="position: fixed; bottom: 0px">
+      Canvas is not supported in your browser.
+    </canvas>
+  </body>
+  <script src="script.js"></script>
+</html>
