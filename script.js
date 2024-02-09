@@ -4,14 +4,14 @@ const m = document.getElementById("m");
 const s = document.getElementById("s");
 const label = document.getElementById("label");
 const audio = document.getElementById("audio");
-const newYear = `Feb 9, ${new Date().getFullYear()} 20:20:00`;
+const newYear = `Feb 9, ${new Date().getFullYear()} 20:22:00`;
 
 var getTrueNumber = (num) => {
   return num < 10 ? "0" + num : num;
 };
 
 function calculateRemainingTime() {
-  const comingDate = new Date(newyear);
+  const comingDate = new Date(newYear);
 
   const now = new Date();
   const remainingTime = comingDate.getTime() - now.getTime();
