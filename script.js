@@ -4,7 +4,7 @@ const m = document.getElementById("m");
 const s = document.getElementById("s");
 const label = document.getElementById("label");
 const audio = document.getElementById("audio");
-const newYear = `Feb 9, ${new Date().getFullYear()} 20:14:00`;
+const newYear = `Feb 9, ${new Date().getFullYear()} 20:15:30`;
 
 var getTrueNumber = (num) => {
   return num < 10 ? "0" + num : num;
